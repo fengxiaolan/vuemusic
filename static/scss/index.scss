@@ -1,0 +1,60 @@
+<template>  
+   <div v-swiper:mySwiper="swiperOption">
+         <div class="swiper-wrapper">
+            <div  class="swiper-slide" v-for="(banner,index) in banners" :key="banner.index">
+              <a>
+                <img :src="banner" />
+              </a>
+            </div >
+          </div >
+
+          <div class="swiper-pagination swiper-pagination-bullets">
+		     </div>
+  </div>
+
+</template>
+
+<script type="text/javascript">
+  // import { swiper } from 'vue-awesome-swiper'
+   export default {
+     data(){
+       return {
+          banners:['images/carousel1.jpg','images/carousel2.jpg','images/carousel3.jpg','images/carousel4.jpg','images/carousel5.jpg'],
+          swiperOption: {
+            autoplay: 5000,
+            initialSlide: 1,
+            loop: true,
+            pagination: '.swiper-pagination',
+            onSlideChangeEnd: swiper => {
+            console.log('onSlideChangeEnd', swiper.realIndex)
+          }
+       }
+     }
+   },
+   mounted(){
+     console.log('app init')
+     console.log(this)
+      setTimeout(() => {
+        this.banners.push('images/carousel5.jpg')
+        console.log('banners update')
+      }, 3000)
+      console.log(
+        'This is current swiper instance object', this.mySwiper, 
+        'It will slideTo banners 3')
+      this.mySwiper.slideTo(3);
+      
+    }
+   }
+</script>
+
+<style type="text/css">
+  .swiper-wrapper{
+    height: 150px;
+    background: #fff;
+    width: 100%;
+  }
+  .swiper-slide img{
+    height: 100%;
+  }
+
+</style>

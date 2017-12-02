@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+html,body,div, dl,dt, dd, h1, h2, h3, h4, h5, h6, p,form,ol,li,ul,th,td,fieldset,legend{margin:0; padding:0;}
+h1, h2, h3, h4, h5, h6,b,strong{font-weight:normal;}
+i,em{font-style:normal;}
+img{border:none;display:block;}
+a{text-decoration:none;}
+ul,ol,li{list-style:none;}
+input{outline:none;border:0;}
+table{border-collapse: collapse;border-spacing: 0;}
+.clearfix:after{ 
+		  display:block; 
+		  content:"."; 
+		  height:0; 
+		  font-size:0; 
+		  clear:both; 
+		  overflow:hidden;
+		  visibility: hidden;
+	}
+
+html{
+	height: 100%;
+	}
+body{
+	background: #222;
+	position: relative;
+}

@@ -1,0 +1,16 @@
+https://github.com/ustbhuangyi/better-scroll
+https://github.com/k-water/vue-music
+https://www.zhihu.com/question/37984203
+https://www.cnblogs.com/qiufenghua/p/6645464.html
+
+scroll
+http://www.imooc.com/article/18232
+slider
+https://github.com/NightCatSama/vue-slider-component
+
+
+网易云https://segmentfault.com/a/1190000008653564
+qq音乐接口http://blog.csdn.net/Tracy_frog/article/details/76713914
+
+取数据
+搜索
