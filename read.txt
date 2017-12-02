@@ -8,6 +8,19 @@ http://www.imooc.com/article/18232
 slider
 https://github.com/NightCatSama/vue-slider-component
 
+命令行工具
+#升级 npm
+cnpm install npm -g
+#安装vue
+$ npm install vue-----查看版本vue -V
+# 全局安装 vue-cli
+$ npm install --global vue-cli
+# 创建一个基于 webpack 模板的新项目
+$ vue init webpack my-project
+# 安装依赖，走你
+$ cd my-project
+$ npm install  //node_modules
+$ npm run dev  //运行
 
 网易云https://segmentfault.com/a/1190000008653564
 qq音乐接口http://blog.csdn.net/Tracy_frog/article/details/76713914
